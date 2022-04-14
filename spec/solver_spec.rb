@@ -39,5 +39,5 @@ describe Solver do
       anynumber = @solver.fizzbuzz(1)
       expect(anynumber).to eq '1'
     end
-  end 
+  end
 end

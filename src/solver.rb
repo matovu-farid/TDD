@@ -12,16 +12,12 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
   def fizzbuzz(word)
-    if word % 3 == 0 && word % 5 == 0
-      return 'fizzbuzz'
-    end
-    if word % 3 == 0
-      return 'fizz'
-    end
-    if word % 5 == 0
-      return 'buzz'
-    end
-    return word.to_s
+    return 'fizzbuzz' if (word % 3).zero? && (word % 5).zero?
+    return 'fizz' if (word % 3).zero?
+    return 'buzz' if (word % 5).zero?
+
+    word.to_s
   end
 end
