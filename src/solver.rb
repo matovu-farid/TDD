@@ -16,5 +16,8 @@ class Solver
     if word % 3 == 0
       return 'fizz'
     end
+    if word % 5 == 0
+      return 'buzz'
+    end
   end
 end
