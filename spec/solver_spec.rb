@@ -16,4 +16,10 @@ describe Solver do
       expect(actual_factorial).to eq 1
     end
   end
+  describe 'reverse' do
+    it 'should return a reversed string' do
+      actual_reversed = @solver.reverse('hello')
+      expect(actual_reversed).to eq 'olleh'
+    end
+  end
 end
