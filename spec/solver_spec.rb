@@ -22,4 +22,10 @@ describe Solver do
       expect(actual_reversed).to eq 'olleh'
     end
   end
+  describe 'fizzbuzz' do
+    it 'should return fizz when n is divisible by three' do
+      fizz = @solver.fizzbuzz(3)
+      expect(fizz).to eq 'fizz'
+    end
+  end
 end
