@@ -27,5 +27,9 @@ describe Solver do
       fizz = @solver.fizzbuzz(3)
       expect(fizz).to eq 'fizz'
     end
-  end
+    it 'should return fizz when n is divisible by five' do
+      buzz = @solver.fizzbuzz(5)
+      expect(buzz).to eq 'buzz'
+    end
+  end 
 end
