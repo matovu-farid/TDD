@@ -27,13 +27,17 @@ describe Solver do
       fizz = @solver.fizzbuzz(3)
       expect(fizz).to eq 'fizz'
     end
-    it 'should return fizz when n is divisible by five' do
+    it 'should return buzz when n is divisible by five' do
       buzz = @solver.fizzbuzz(5)
       expect(buzz).to eq 'buzz'
     end
-    it 'should return fizz when n is divisible by three and five' do
+    it 'should return fizzbuzz when n is divisible by three and five' do
       fizzbuzz = @solver.fizzbuzz(15)
       expect(fizzbuzz).to eq 'fizzbuzz'
+    end
+    it 'should return string if n is other number' do
+      anynumber = @solver.fizzbuzz(1)
+      expect(anynumber).to eq '1'
     end
   end 
 end
