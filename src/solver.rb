@@ -22,5 +22,6 @@ class Solver
     if word % 5 == 0
       return 'buzz'
     end
+    return word.to_s
   end
 end
